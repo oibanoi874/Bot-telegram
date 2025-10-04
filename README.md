@@ -60,26 +60,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🪄 Cấu hình ban đầu
-
-Khi chạy lần đầu, bot sẽ tự tạo file `cf.json` với cấu hình mặc định:
-
-```json
-{
-  "token_main": "YOUR_BOT_TOKEN",
-  "token_sub": "",
-  "owners": [123456789],
-  "log_op": [123456789],
-  "port": 8080,
-  "daily_reward": 100,
-  "daily_cooldown": 14400
-}
-```
-
-> 🔑 Điền **token bot Telegram** vào `token_main`, và thêm **ID của bạn** vào `owners`.
-
----
-
 ## 🚀 3 Cách Chạy Bot
 
 ### 🧭 **Cách 1: Chạy trực tiếp trên máy (Windows / Termux / Linux)**

@@ -120,8 +120,7 @@ Katabump cho phép chạy Python liên tục giống Replit, nhưng nhanh hơn.
 5. Chỉnh sửa file cf.json và chạy bot
 > 💡 Nhớ `ReNew` mỗi 4 ngày 
 
-
-Cách tải chi tiết: [ở đây]()
+- Cách tải chi tiết: [ở đây]()
 
 ---
 

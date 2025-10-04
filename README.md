@@ -85,8 +85,8 @@ Khi chạy lần đầu, bot sẽ tự tạo file `cf.json` với cấu hình m�
 ### 🧭 **Cách 1: Chạy trực tiếp trên máy (Windows / Termux / Linux)**
 
 ```bash
-git clone https://github.com/oibanoi874/telegram-bot
-cd telegram-bot
+git clone https://github.com/oibanoi874/Bot-telegram
+cd Bot-telegram
 pip install -r requirements.txt
 python app.py
 ```

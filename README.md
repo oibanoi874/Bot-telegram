@@ -1,4 +1,4 @@
-# 🤖 Telegram Multi-Function Bot
+# 🤖 Bot-telegram
 
 Bot Telegram đa năng được viết bằng **Python**, sử dụng **python-telegram-bot** và **Flask** để giữ kết nối online.  
 Bao gồm các tính năng: 🎲 Game, 🛠 Công cụ, 💰 Hệ thống coin, 📷 QR, 🎬 TikTok downloader, và ⚙️ Config UI trực tiếp trên Telegram.
@@ -28,7 +28,6 @@ Bao gồm các tính năng: 🎲 Game, 🛠 Công cụ, 💰 Hệ thống coin, 
 - `/infobot` – Thông tin bot, link liên hệ.
 
 ### 👑 Quản trị (Owner)
-- `/config` – Giao diện chỉnh config (qua inline button).
 - `/idall` – Xem danh sách ID Owner.
 - Log hoạt động tự động gửi đến owner.
 
@@ -89,7 +88,7 @@ Khi chạy lần đầu, bot sẽ tự tạo file `cf.json` với cấu hình m�
 git clone https://github.com/oibanoi874/telegram-bot
 cd telegram-bot
 pip install -r requirements.txt
-python main.py
+python app.py
 ```
 
 > 💡 Bot sẽ tự động tạo `cf.json` — bạn điền token và ID owner vào rồi chạy lại.
@@ -98,16 +97,13 @@ python main.py
 
 ### 🌐 **Cách 2: Chạy trên [Replit](https://replit.com/)**
 
-1. Vào [vào đây](https://replit.com)
-2. Tạo project mới → chọn **Python**
-3. Dán toàn bộ code `main.py`
-4. Mở **Shell** → nhập:
-
-   ```bash
-   pip install python-telegram-bot==20.3 flask colorlog pillow qrcode feedparser beautifulsoup4 requests
-   python main.py
-   ```
-5. Bot sẽ tự bật Flask keep-alive và chạy ổn định 24/7.
+1. Vào [https://replit.com](https://replit.com) và đăng nhập
+2. Vào `Import code or design`
+3. Chọn `GitHub` dán link `https://github.com/oibanoi874/Bot-telegram` vào `GitHub Repo URL`
+4. Chọn `Import from GitHub`
+5. Vào file `cf.json` để sửa
+6. Chạy bot 
+7. Bot sẽ tự bật Flask keep-alive và chạy ổn định 24/7.
 
 > 💡 Replit có thể cần thêm 1 service ping (vd [UptimeRobot](https://uptimerobot.com)) để giữ bot online liên tục.
 
@@ -117,16 +113,16 @@ python main.py
 
 Katabump cho phép chạy Python liên tục giống Replit, nhưng nhanh hơn.
 
-1. Truy cập [vào đây]([https://katabump.com](https://dashboard.katabump.com/auth/login#9ce953))
-2. Tạo project Python mới
-3. Upload file `main.py`
-4. Trong **Console**, nhập:
+1. Truy cập [vào đây](https://dashboard.katabump.com/auth/login#9ce953)
+2. Tạo tài khoản và sever
+3. Tải file: [ở đây](https://www.mediafire.com/file/536rhchozkvprcz/bot-telegram.zip/file)
+4. Upload file lên sever và unarcunar fild
+5. Chỉnh sửa file cf.json và chạy bot
+> 💡 Nhớ `ReNew` mỗi 4 ngày 
 
-   ```bash
-   pip install python-telegram-bot==20.3 flask colorlog pillow qrcode feedparser beautifulsoup4 requests
-   python main.py
-   ```
-5. Bot sẽ khởi động và in thông tin (tên, ID, owner...) ra console.
+
+Cách tải chi tiết: [ở đây]()
+
 ---
 
 ## 📜 Một số lệnh quan trọng
@@ -160,4 +156,6 @@ Katabump cho phép chạy Python liên tục giống Replit, nhưng nhanh hơn.
 * Log tự động gửi cho owner khi đủ số lượng tin nhắn (`log_limit`).
 
 ---
-🪶 Code by [@oibanoi874](https://t.me/oibanoi874)
+
+### 🪶 Code by [@oibanoi874](https://t.me/oibanoi874)
+

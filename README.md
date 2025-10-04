@@ -81,21 +81,52 @@ Khi chạy lần đầu, bot sẽ tự tạo file `cf.json` với cấu hình m�
 
 ---
 
-## 🖥️ Chạy bot
+## 🚀 3 Cách Chạy Bot
 
-### Cách 1: Python trực tiếp
+### 🧭 **Cách 1: Chạy trực tiếp trên máy (Windows / Termux / Linux)**
 
 ```bash
-python app.py
+git clone https://github.com/oibanoi874/telegram-bot
+cd telegram-bot
+pip install -r requirements.txt
+python main.py
 ```
 
-### Cách 2: Replit
+> 💡 Bot sẽ tự động tạo `cf.json` — bạn điền token và ID owner vào rồi chạy lại.
 
- Xem chi tiết: [ở đây](http:)
+---
 
-### Cách 3: Katabump
+### 🌐 **Cách 2: Chạy trên [Replit](https://replit.com/)**
 
- Xem chi tiết: [ở đđây(https:)
+1. Vào [vào đây](https://replit.com)
+2. Tạo project mới → chọn **Python**
+3. Dán toàn bộ code `main.py`
+4. Mở **Shell** → nhập:
+
+   ```bash
+   pip install python-telegram-bot==20.3 flask colorlog pillow qrcode feedparser beautifulsoup4 requests
+   python main.py
+   ```
+5. Bot sẽ tự bật Flask keep-alive và chạy ổn định 24/7.
+
+> 💡 Replit có thể cần thêm 1 service ping (vd [UptimeRobot](https://uptimerobot.com)) để giữ bot online liên tục.
+
+---
+
+### 💣 **Cách 3: Chạy trên Katabump**
+
+Katabump cho phép chạy Python liên tục giống Replit, nhưng nhanh hơn.
+
+1. Truy cập [vào đây]([https://katabump.com](https://dashboard.katabump.com/auth/login#9ce953))
+2. Tạo project Python mới
+3. Upload file `main.py`
+4. Trong **Console**, nhập:
+
+   ```bash
+   pip install python-telegram-bot==20.3 flask colorlog pillow qrcode feedparser beautifulsoup4 requests
+   python main.py
+   ```
+5. Bot sẽ khởi động và in thông tin (tên, ID, owner...) ra console.
 ---
 
 ## 📜 Một số lệnh quan trọng
@@ -129,6 +160,4 @@ python app.py
 * Log tự động gửi cho owner khi đủ số lượng tin nhắn (`log_limit`).
 
 ---
-
-### 🪶 Code by [@oibanoi874](https://t.me/oibanoi874)
-
+🪶 Code by [@oibanoi874](https://t.me/oibanoi874)

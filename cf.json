@@ -1,12 +1,8 @@
 {
     "token_main": "",
     "token_sub": "",
-    "owners": [
-      7698396977,
-      6834257853
-    ],
-    "log_op": [
-      7698396977],
+    "owners": [],
+    "log_op": [],
     "port": 8080,
     "log_limit": 20,
     "daily_cooldown": 14400,

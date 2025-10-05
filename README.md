@@ -63,29 +63,36 @@ pip install -r requirements.txt
 ## 🚀 3 Cách Chạy Bot
 
 ### 🧭 **Cách 1: Chạy trực tiếp trên máy (Windows / Termux / Linux)**
+- Cài các package và file cần thiết
+    ```bash
+    pkg install git -y
+    git clone https://github.com/oibanoi874/Bot-telegram
+    cd Bot-telegram
+    pip install -r requiremententer
+    ```
+- Sửa file config
+    ```bash
+    nano cf.json
+    ```
+- chạy bot
+    ```bash
+    python app.py
+    ```
 
-```bash
-git clone https://github.com/oibanoi874/Bot-telegram
-cd Bot-telegram-main
-pip install -r requirements.txt
-python app.py
-```
-
-> 💡 Bot sẽ tự động tạo `cf.json` — bạn điền token và ID owner vào rồi chạy lại.
+> 💡 Lệnh `nano cf.json` để vào file cf.json để chỉnh sửa sau khi sửa xong ctr+x rồi nhập y nhấn enter
 
 ---
 
 ### 🌐 **Cách 2: Chạy trên [Replit](https://replit.com/)**
 
-1. Vào [https://replit.com](https://replit.com) và đăng nhập
-2. Vào `Import code or design`
-3. Chọn `GitHub` dán link `https://github.com/oibanoi874/Bot-telegram` vào `GitHub Repo URL`
-4. Chọn `Import from GitHub`
-5. Vào file `cf.json` để sửa
-6. Chạy bot 
-7. Bot sẽ tự bật Flask keep-alive và chạy ổn định 24/7.
+1. Vào `https://replit.com/@oibanoi874/Bot-telegram-oibanoi874`
+2. Vào `Remix this app`
+3. Chọn `Remix App`
+4. Vào file `cf.json` để sửa
+5. Chạy bot 
+6. Bot sẽ tự bật Flask keep-alive và chạy ổn định 24/7.
 
-> 💡 Replit có thể cần thêm 1 service ping (vd [UptimeRobot](https://uptimerobot.com)) để giữ bot online liên tục.
+> 💡 Replit có thể cần thêm 1 service ping (vd [UptimeRobot](https://uptimerobot.com/?rid=56b57dd5ed7323)) để giữ bot online liên tục.
 
 ---
 
@@ -137,4 +144,3 @@ Katabump cho phép chạy Python liên tục giống Replit, nhưng nhanh hơn.
 ---
 
 ### 🪶 Code by [@oibanoi874](https://t.me/oibanoi874)
-
